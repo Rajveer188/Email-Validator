@@ -1,5 +1,5 @@
 //regex to validate email
-const regex = /^[a-zA-Z0-9]+/;
+const regex = /^[a-zA-Z0-9]+@[a-zA-z]+\.[a-zA-Z]+/;
 
 //function to validate email
 function validate(email){
@@ -8,4 +8,7 @@ function validate(email){
 
 //test
 console.log(validate("abc"));
+console.log(validate("abc@bridgelabz"));
+console.log(validate("abc@bridgelabz.co"));
+
 
